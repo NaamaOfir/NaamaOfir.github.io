@@ -1,0 +1,28 @@
+svg {
+    position: absolute;
+}
+
+app-play-button {
+    width: 10%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 3%;
+    top: 7%;
+}
+
+app-time-bar {
+    position: absolute;
+    bottom: 16%;
+    left: 50%;
+    width: 80%;
+    height: 20%;
+    transform: translateX(-50%);
+}
+
+#right {
+    stop-color: var(--primary);
+}
+
+#left {
+    stop-color: var(--secondary);
+}

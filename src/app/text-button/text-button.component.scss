@@ -1,0 +1,39 @@
+#con {
+    border-radius: 200px;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+#con:active {
+    box-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.05);
+}
+
+#text-button-con {
+    flex: 1;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+app-download-button,
+app-play-button {
+    height: 40px;
+    aspect-ratio: 1/1;
+    right: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+app-download-button {
+    height: 23px;
+    right: 4px;
+}

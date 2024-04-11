@@ -1,0 +1,16 @@
+<div id="letter-con">
+    <div id="title-con">
+        <h2>{{title[0]}} </h2>
+        <h1>{{title[1]}} </h1>
+    </div>
+    <div id="img-con">
+        <img [style.width]="width" [style.height]="height" src="{{path}}">
+    </div>
+
+    <div id="letter-text-con">
+        <div *ngFor="let l of paragraph; let i = index">
+            <p *ngIf="l">{{ l }}</p>
+            <div id="space" *ngIf="!l"></div>
+        </div>
+    </div>
+</div>

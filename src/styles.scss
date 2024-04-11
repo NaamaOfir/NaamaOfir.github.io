@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+
+:root {
+    direction: rtl;
+    font-family: "Alef", sans-serif;
+    font-style: normal;
+    color: var(--text);
+
+    --text: hsl(0, 0%, 100%);
+    --text-dark: hsl(0, 0%, 50%);
+    --background: hsl(0, 0%, 5%);
+    --background-light: hsl(0, 0%, 10%);
+    --background-dark: hsl(0, 0%, 0%);
+    --primary: hsl(0, 100%, 30%);
+    --primary-dark: hsl(0, 100%, 20%);
+    --primary-light: #c26666; // TODO bad
+    --secondary: hsl(248, 100%, 20%);
+    --accent: hsl(56, 52%, 59%);
+
+    // border
+    --br: 20px
+}
+
+body {
+    background: var(--background);
+    margin: 0;
+    padding: 0;
+}
+
+button:active {
+    box-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+h3 {
+    font-size: large;
+}
+
+h4 {
+    font-size: small;
+}
+
+p {
+    font-size: large;
+}
+
+
+// @media screen and (max-width: 550px) {
+//     p {
+//         font-size: 26px;
+//     }
+// }

@@ -1,0 +1,91 @@
+#linktree {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#linktree img {
+    padding-left: 10px;
+    width: 150px;
+}
+
+#shvr {
+    // margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shvr img {
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+}
+
+hr.line {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: none;
+    background: linear-gradient(90deg, var(--secondary) 0%, var(--secondary) 50%, var(--secondary) 100%);
+    border-radius: 200px;
+    width: 160px;
+    height: 2px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr.line:before {
+    content: "";
+    width: 10px;
+    aspect-ratio: 1;
+    background-color: var(--secondary);
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
+#padding {
+    height: 10vh;
+}
+
+app-music-player {
+    position: fixed;
+    bottom: 0;
+    right: -1px;
+    aspect-ratio: 4/1;
+    width: 101vw;
+}
+
+
+// Bad TODO move this
+#profile-img-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+#profile-img {
+    width: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+
+@media screen and (min-width: 500px) {
+    app-music-player {
+        bottom: 5%;
+        right: 50%;
+        transform: translateX(50%);
+
+        width: 500px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    #padding {
+        height: 20vh;
+    }
+}

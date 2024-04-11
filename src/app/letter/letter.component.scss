@@ -1,0 +1,45 @@
+#letter-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+h1,
+p,
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+
+#space {
+    height: 20px;
+}
+
+#title-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#letter-text-con {
+    max-width: 600px;
+    margin: 0 40px;
+}
+
+#img-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+img {
+    height: 300px;
+    aspect-ratio: 1;
+    // object-position: 85% center;
+    // object-fit: cover;
+}
