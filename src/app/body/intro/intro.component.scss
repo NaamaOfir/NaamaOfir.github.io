@@ -1,0 +1,19 @@
+img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 64px;
+    aspect-ratio: 1;
+}
+
+div {
+    margin: 0 40px;
+    margin-top: 140px;
+}
+
+app-scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}

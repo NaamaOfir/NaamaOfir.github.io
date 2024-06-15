@@ -32,7 +32,25 @@ p {
     color: var(--text);
 }
 
+h1 {
+    font-size: xxx-large;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+h4 {
+    font-size: large;
+}
+
 app-root>* {
+    position: relative;
+
     height: inherit;
     scroll-snap-align: center;
     flex-shrink: 0; // this is the key
@@ -45,6 +63,7 @@ app-root {
     height: 100vh;
     width: 100%;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth; // TODO maybe
     overflow-y: auto;
     overflow-x: hidden;
 }
