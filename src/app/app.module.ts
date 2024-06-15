@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BodyModule } from './body/body.module';
 
@@ -11,7 +10,6 @@ import { BodyModule } from './body/body.module';
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
         BodyModule,
     ],
     providers: [

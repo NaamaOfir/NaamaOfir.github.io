@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "OdedRabby": {
+    "NaamaOfir": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/oded-page",
+            "outputPath": "dist/naama-page",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "OdedRabby:build:production"
+              "buildTarget": "NaamaOfir:build:production"
             },
             "development": {
-              "buildTarget": "OdedRabby:build:development"
+              "buildTarget": "NaamaOfir:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "OdedRabby:build"
+            "buildTarget": "NaamaOfir:build"
           }
         },
         "test": {
