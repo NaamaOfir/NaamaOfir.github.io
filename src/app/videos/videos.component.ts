@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { defaultVideoSrc } from '../strings/videos';
 
 @Component({
   selector: 'app-videos',
@@ -6,9 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './videos.component.scss'
 })
 export class VideosComponent {
-  currentVideoSrc: string = ''
+  currentVideoSrc: string = defaultVideoSrc
 
-  handleSelectVideo(src: string) {
+  handleSelectVideo = (src: string) => {
     this.currentVideoSrc = src
   }
 }

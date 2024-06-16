@@ -27,6 +27,8 @@ type VideoPreview = {
   styleUrl: './video-gallery.component.scss'
 })
 export class VideoGalleryComponent {
+  @Input() onSelectVideo!: (src: string) => void
+
   filters: Filter[] = [
     {
       type: Type.MD,
@@ -128,10 +130,13 @@ export class VideoGalleryComponent {
     },
   ]
 
-  @Input() onSelectVideo!: (src: string) => void
 
   constructor() {
     this.videos = this.allVideos.filter((e) => e.type === Type.CA)
+  }
+
+  handleVideoClick = (v: VideoPreview) => {
+    this.onSelectVideo(v.url)
   }
 
   handleSelectFilter = (f: Filter) => {
