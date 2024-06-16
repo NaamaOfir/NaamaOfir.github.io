@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { filter1, filter2, filter3 } from '../strings/videos';
 
 enum Type {
@@ -127,6 +127,8 @@ export class VideoGalleryComponent {
       url: 'https://vimeo.com/905509689'
     },
   ]
+
+  @Input() onSelectVideo!: (src: string) => void
 
   constructor() {
     this.videos = this.allVideos.filter((e) => e.type === Type.CA)

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './videos.component.scss'
 })
 export class VideosComponent {
+  currentVideoSrc: string = ''
 
+  handleSelectVideo(src: string) {
+    this.currentVideoSrc = src
+  }
 }

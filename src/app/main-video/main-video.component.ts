@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-main-video',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './main-video.component.scss'
 })
 export class MainVideoComponent {
+  @Input() src!: string
 
 }
