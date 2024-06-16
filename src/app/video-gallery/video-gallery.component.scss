@@ -11,6 +11,12 @@
     border-radius: 20px;
 }
 
+@media screen and (orientation:landscape) {
+    :host {
+        display: none;
+    }
+}
+
 
 #filters {
     display: flex;
