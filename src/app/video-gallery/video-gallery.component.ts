@@ -58,73 +58,73 @@ export class VideoGalleryComponent {
     },
     {
       type: Type.MD,
-      path: 'assets/thumbnail/capture1.png',
+      path: 'assets/thumbnail/capture2.png',
       name: 'Frog Animation',
       url: 'https://player.vimeo.com/video/950843409?h=122c556dfd'
     },
     {
       type: Type.MD,
-      path: 'assets/thumbnail/capture2.png',
+      path: 'assets/thumbnail/capture3.png',
       name: 'Working From Home Animation',
       url: 'https://player.vimeo.com/video/950843968?h=ff06ee5cac'
     },
     {
       type: Type.MD,
-      path: 'assets/thumbnail/capture3.png',
+      path: 'assets/thumbnail/capture4.png',
       name: 'Blue',
       url: 'https://player.vimeo.com/video/950846203?h=661abe13f9'
     },
     {
       type: Type.MD,
-      path: 'assets/thumbnail/capture4.png',
+      path: 'assets/thumbnail/capture5.png',
       name: 'Mind-Body Connection Explainer',
       url: ''
     },
     {
       type: Type.MD,
-      path: 'assets/thumbnail/capture5.png',
+      path: 'assets/thumbnail/capture6.png',
       name: 'Moon Cycle Animation',
       url: 'https://player.vimeo.com/video/950846845?h=e16980c954'
     },
     {
       type: Type.MD,
-      path: 'assets/thumbnail/capture6.png',
+      path: 'assets/thumbnail/capture7.png',
       name: 'Windmill Animation',
       url: ''
     },
     {
       type: Type.MD,
-      path: 'assets/thumbnail/capture7.png',
+      path: 'assets/thumbnail/capture8.png',
       name: 'Name Animation',
       url: ''
     },
     {
       type: Type.MD,
-      path: 'assets/thumbnail/capture8.png',
+      path: 'assets/thumbnail/capture9.png',
       name: 'Dialogue Opener',
       url: 'https://player.vimeo.com/video/830933663?h=35955ad039'
     },
     {
       type: Type.CA,
-      path: 'assets/thumbnail/capture9.png',
+      path: 'assets/thumbnail/capture10.png',
       name: '3D Character Animation Reel 2024',
       url: 'https://vimeo.com/830933663'
     },
     {
       type: Type.VP,
-      path: 'assets/thumbnail/capture10.png',
+      path: 'assets/thumbnail/capture11.png',
       name: 'Hailo-Holiday Short',
       url: 'https://vimeo.com/950849766'
     },
     {
       type: Type.VP,
-      path: 'assets/thumbnail/capture11.png',
+      path: 'assets/thumbnail/capture12.png',
       name: 'Hailo-Demo ',
       url: 'https://vimeo.com/905515939'
     },
     {
       type: Type.VP,
-      path: 'assets/thumbnail/capture12.png',
+      path: 'assets/thumbnail/capture13.png',
       name: 'Hailo-Renesas demo',
       url: 'https://vimeo.com/905509689'
     },
