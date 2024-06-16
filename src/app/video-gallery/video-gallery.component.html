@@ -1,0 +1,6 @@
+<div id="filters">
+    <app-video-filter *ngFor="let f of filters" [text]="f.name"></app-video-filter>
+</div>
+<div id="gallery">
+    <app-video-preview *ngFor="let e of videos" [path]="e.path" [name]="e.name"></app-video-preview>
+</div>

@@ -1,0 +1,21 @@
+:host {
+    display: block;
+    background-color: var(--secondary);
+}
+
+img {
+    background-color: black; //TODO
+    object-fit: cover;
+}
+
+h4 {
+    margin: 4px 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+}
