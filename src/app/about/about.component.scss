@@ -1,0 +1,21 @@
+:host {
+    width: 80%;
+    max-width: 450px;
+}
+
+#links,
+#text {
+    padding: 20px;
+}
+
+#links {
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 40px 0;
+}

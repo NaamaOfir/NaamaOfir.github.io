@@ -8,6 +8,9 @@ import { MainVideoComponent } from '../main-video/main-video.component';
 import { VideosComponent } from '../videos/videos.component';
 import { VideoFilterComponent } from '../video-filter/video-filter.component';
 import { VideoPreviewComponent } from '../video-preview/video-preview.component';
+import { AboutComponent } from '../about/about.component';
+import { EmailComponent } from '../email/email.component';
+import { SocialComponent } from '../social/social.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { VideoPreviewComponent } from '../video-preview/video-preview.component'
     MainVideoComponent,
     VideosComponent,
     VideoFilterComponent,
-    VideoPreviewComponent
+    VideoPreviewComponent,
+    AboutComponent,
+    EmailComponent,
+    SocialComponent
   ],
   imports: [
     CommonModule,
@@ -27,6 +33,7 @@ import { VideoPreviewComponent } from '../video-preview/video-preview.component'
   exports: [
     IntroComponent,
     VideosComponent,
+    AboutComponent,
   ]
 })
 export class BodyModule { }
