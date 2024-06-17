@@ -22,3 +22,18 @@
 p {
     margin: 40px 0;
 }
+
+
+// On Desktop
+@media screen and (min-width: 1024px) {
+    #email-mobile {
+        display: none;
+    }
+}
+
+// On Mobile
+@media screen and (max-width: 1024px) {
+    #email-desktop {
+        display: none;
+    }
+}

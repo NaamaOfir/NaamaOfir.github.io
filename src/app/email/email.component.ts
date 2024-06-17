@@ -7,7 +7,7 @@ import { email } from '../strings/about';
   styleUrl: './email.component.scss'
 })
 export class EmailComponent {
-  @Input() onCopyClick!: () => void
+  @Input() onCopyClick?: () => void
   email = email
 
   // copyIcon = faCopy
@@ -20,6 +20,8 @@ export class EmailComponent {
   copyEmailToClipboard = (event: MouseEvent) => {
     event.preventDefault();
     navigator.clipboard.writeText(this.email)
-    this.onCopyClick()
+    console.log('copyEmailToClipboard')
+
+    this.onCopyClick?.()
   }
 }

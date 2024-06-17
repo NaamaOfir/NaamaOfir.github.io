@@ -15,6 +15,7 @@ export class AboutComponent {
   tooltipText: string = 'Copied!'
 
   handleEmailClick = () => {
+    console.log('handleEmailClick')
     this.tooltip.show()
     setTimeout(() => {
       this.tooltip.hide()
