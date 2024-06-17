@@ -1,4 +1,3 @@
-<!-- [style.background-color]="(f.isSelected) ? 'var(--accent)': 'var(--secondary)'"  -->
 <div id="filters">
     <app-video-filter *ngFor="let e of filters" [ngClass]="{'selected': e.isSelected}" [filter]="e"
         [onSelect]="handleSelectFilter"></app-video-filter>
