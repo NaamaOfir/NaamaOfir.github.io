@@ -8,12 +8,13 @@
     --primary: hsl(17, 25%, 53%);
     --secondary: hsl(16, 28%, 71%);
     --accent: hsl(17, 31%, 64%);
+    --active: hsl(0, 54%, 46%);
 }
 
 
 html,
 body {
-    height: 100vh;
+    height: 100svh;
     overflow: hidden;
 }
 
@@ -45,7 +46,7 @@ h3 {
 }
 
 h4 {
-    font-size: x-small;
+    font-size: small;
 }
 
 app-root>* {
@@ -60,10 +61,9 @@ app-root>* {
 app-root {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: inherit;
     width: 100%;
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth; // TODO maybe
     overflow-y: auto;
     overflow-x: hidden;
 }
