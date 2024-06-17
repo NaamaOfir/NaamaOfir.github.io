@@ -1,1 +1,1 @@
-export const facebook = "https://www.facebook.com/?locale=he_IL"
+export const linkedinLink = "http://www.linkedin.com/in/naama-ofir-546750180"

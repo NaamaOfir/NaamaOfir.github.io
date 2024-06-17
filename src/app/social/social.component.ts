@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { Styles } from '@fortawesome/fontawesome-svg-core';
-import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { facebook } from '../strings/social';
+import { linkedinLink } from '../strings/social';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-social',
@@ -10,12 +9,10 @@ import { facebook } from '../strings/social';
   styleUrl: './social.component.scss'
 })
 export class SocialComponent {
-  faEnvelope = faEnvelope
-  faFacebookF = faFacebookF
-  faInstagram = faInstagram
+  faLinkedin = faLinkedin
 
 
-  facebook = facebook
+  linkedinLink = linkedinLink
 
   style: Styles = {
     height: '40px',

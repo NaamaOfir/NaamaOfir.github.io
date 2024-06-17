@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { email } from '../strings/about';
+import { faCopy } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-email',
@@ -9,6 +10,12 @@ import { email } from '../strings/about';
 export class EmailComponent {
   email = email
 
+  copyIcon = faCopy
+
+  style = {
+    height: '40px',
+    width: '40px',
+  }
 
   copyEmailToClipboard(event: MouseEvent): void {
     event.preventDefault();
