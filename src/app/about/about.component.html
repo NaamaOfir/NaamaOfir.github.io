@@ -4,6 +4,7 @@
     <p>{{p2}}</p>
 </div>
 <div id="links">
-    <app-email></app-email>
+    <app-email #tooltip="matTooltip" [onCopyClick]="handleEmailClick" [matTooltipShowDelay]="'0'"
+        [matTooltipPosition]="'above'" matTooltip="{{tooltipText}}"></app-email>
     <app-social></app-social>
 </div>

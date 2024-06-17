@@ -12,6 +12,9 @@ import { AboutComponent } from '../about/about.component';
 import { EmailComponent } from '../email/email.component';
 import { SocialComponent } from '../social/social.component';
 
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { SocialComponent } from '../social/social.component';
     SocialComponent
   ],
   imports: [
+    BrowserAnimationsModule,
+    MatTooltipModule,
+    MatButtonModule,
     CommonModule,
     FontAwesomeModule
   ],

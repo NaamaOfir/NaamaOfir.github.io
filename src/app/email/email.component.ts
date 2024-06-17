@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { email } from '../strings/about';
-import { faCopy } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-email',
@@ -8,17 +7,19 @@ import { faCopy } from '@fortawesome/free-regular-svg-icons';
   styleUrl: './email.component.scss'
 })
 export class EmailComponent {
+  @Input() onCopyClick!: () => void
   email = email
 
-  copyIcon = faCopy
+  // copyIcon = faCopy
 
-  style = {
-    height: '40px',
-    width: '40px',
-  }
+  // style = {
+  //   height: '40px',
+  //   width: '40px',
+  // }
 
-  copyEmailToClipboard(event: MouseEvent): void {
+  copyEmailToClipboard = (event: MouseEvent) => {
     event.preventDefault();
     navigator.clipboard.writeText(this.email)
+    this.onCopyClick()
   }
 }
