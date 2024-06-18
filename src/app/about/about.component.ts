@@ -12,13 +12,19 @@ export class AboutComponent {
   title: string = title
   p1: string = p1
   p2: string = p2
-  tooltipText: string = 'Copied!'
+  readonly default: string = 'Click to copy'
+  tooltipText: string = this.default
 
   handleEmailClick = () => {
-    console.log('handleEmailClick')
     this.tooltip.show()
+    this.tooltipText = "Copied!"
+
     setTimeout(() => {
       this.tooltip.hide()
     }, 1000)
+
+    setTimeout(() => {
+      this.tooltipText = this.default
+    }, 2000)
   }
 }
