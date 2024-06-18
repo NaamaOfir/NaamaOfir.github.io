@@ -29,6 +29,9 @@ p {
     #email-mobile {
         display: none;
     }
+
+
+
 }
 
 // On Mobile
@@ -36,4 +39,40 @@ p {
     #email-desktop {
         display: none;
     }
+
+    @media screen and (orientation:landscape) {
+        :host {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: x-large;
+        }
+
+        p {
+            margin: 20px 0;
+            font-size: large;
+        }
+
+        #links {
+            position: relative;
+            margin: 20px;
+            display: block;
+            width: 0;
+        }
+
+        #text {
+            position: relative;
+            overflow: hidden;
+            padding: 0px;
+            margin: 0 20px;
+        }
+    }
+
+
+
+
 }
