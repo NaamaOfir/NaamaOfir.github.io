@@ -15,6 +15,7 @@ import { SocialComponent } from '../social/social.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { HeaderComponent } from '../header/header.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MatButtonModule } from '@angular/material/button';
     VideoPreviewComponent,
     AboutComponent,
     EmailComponent,
-    SocialComponent
+    SocialComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserAnimationsModule,

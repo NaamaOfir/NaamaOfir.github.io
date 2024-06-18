@@ -7,6 +7,7 @@ import { Filter } from '../video-gallery/video-gallery.component';
   styleUrl: './video-filter.component.scss'
 })
 export class VideoFilterComponent {
+  @Input() isSelected!: boolean
   @Input() filter!: Filter;
   @Input() onSelect!: (f: Filter) => void;
 

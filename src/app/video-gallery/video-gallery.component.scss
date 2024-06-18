@@ -1,41 +1,10 @@
-app-video-filter,
 app-video-preview {
     transition: outline 0.2s ease-in-out;
     outline: 0px solid var(--active);
 }
 
-app-video-filter.selected {
-    outline: 2px solid var(--active);
-}
-
 app-video-preview.selected {
     outline: 4px solid var(--active);
-}
-
-#filters {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    white-space: nowrap;
-
-    padding: 5px 0;
-    height: 55px;
-    width: 100%;
-
-    border-radius: 20px 20px 0 0;
-    border-bottom: solid 1px var(--accent);
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
-
-    scrollbar-width: none;
-}
-
-#gallery>app-video-preview:nth-child(1),
-#filters>app-video-filter:nth-child(1) {
-    margin-left: 25px;
 }
 
 
@@ -45,12 +14,23 @@ app-video-preview.selected {
         width: 100%;
     }
 
-    #gallery {
+    .grid {
         display: grid;
-
         grid-template-columns: repeat(5, 1fr);
         gap: 10px;
         grid-auto-rows: minmax(100px, auto);
+
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        align-items: center;
+    }
+
+    #gallery {
+
 
 
         height: 50svh;
@@ -59,9 +39,7 @@ app-video-preview.selected {
 
 }
 
-:host {
-    background-color: var(--primary);
-}
+
 
 // On Mobile
 @media screen and (max-width: 1024px) {

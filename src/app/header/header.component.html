@@ -1,0 +1,5 @@
+<h1>{{title}}</h1>
+<div id="filters">
+    <app-video-filter *ngFor="let e of filters" [ngClass]="{'selected': e.isSelected}" [filter]="e"
+        [onSelect]="handleFilterSelect" [isSelected]="e.isSelected"></app-video-filter>
+</div>

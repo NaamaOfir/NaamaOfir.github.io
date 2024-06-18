@@ -1,2 +1,3 @@
-<app-main-video [unSafeSrc]="currentVideoSrc"></app-main-video>
-<app-video-gallery [onSelectVideo]="handleSelectVideo"></app-video-gallery>
+<app-header [onSelectFilter]="onChangeFilter"></app-header>
+<app-video-gallery #gallery [onSelectVideo]="handleSelectVideo"></app-video-gallery>
+<app-main-video id="nextElemId" [unSafeSrc]="currentVideoSrc"></app-main-video>

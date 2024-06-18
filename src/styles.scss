@@ -14,8 +14,8 @@
 
 html,
 body {
-    height: 100svh;
-    overflow: hidden;
+    // height: 100svh;
+    // overflow: hidden;
 }
 
 body {
@@ -64,17 +64,17 @@ h4 {
     }
 }
 
-app-root {
-    overflow-y: auto;
-    overflow-x: hidden;
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+// app-root {
+//     overflow-y: auto;
+//     overflow-x: hidden;
+//     height: inherit;
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+// }
 
-app-root>* {
-    flex-shrink: 0; // this is the key
-    position: relative;
-    width: 100%;
-}
+// app-root>* {
+//     flex-shrink: 0; // this is the key
+//     position: relative;
+//     width: 100%;
+// }

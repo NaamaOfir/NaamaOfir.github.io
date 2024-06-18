@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { filter1, filter2, filter3 } from '../strings/videos';
 
-enum Type {
+export enum Type {
   ALL,
   MD,
   CA,
@@ -30,23 +30,8 @@ type VideoPreview = {
 export class VideoGalleryComponent {
   @Input() onSelectVideo!: (src: string) => void
 
-  filters: Filter[] = [
-    {
-      type: Type.VP,
-      name: filter3,
-      isSelected: true,
-    },
-    {
-      type: Type.MD,
-      name: filter1,
-      isSelected: false,
-    },
-    {
-      type: Type.CA,
-      name: filter2,
-      isSelected: false,
-    },
-  ]
+  isGrid = false
+
 
   videos: VideoPreview[] = []
 
@@ -111,14 +96,14 @@ export class VideoGalleryComponent {
       type: Type.MD,
       path: 'assets/thumbnail/capture9.png',
       name: 'Dialogue Opener',
-      url: 'https://player.vimeo.com/video/830933663?h=35955ad039',
+      url: 'https://player.vimeo.com/video/955779910?h=f02c69c511',
       isSelected: false,
     },
     {
       type: Type.CA,
       path: 'assets/thumbnail/capture10.png',
       name: '3D Character Animation Reel 2024',
-      url: 'https://player.vimeo.com/video/886390809?h=7a97e72b5a',
+      url: 'https://player.vimeo.com/video/830933663?h=35955ad039',
       isSelected: false,
     },
     {
@@ -149,16 +134,27 @@ export class VideoGalleryComponent {
     this.videos = this.allVideos.filter((e) => e.type === Type.VP)
   }
 
+  scrollDown() {
+    const nextElem = document.getElementById('nextElemId');
+    nextElem?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   handleVideoClick = (v: VideoPreview) => {
     this.allVideos.forEach((e) => e.isSelected = false)
     v.isSelected = true
     this.onSelectVideo(v.url)
+    this.scrollDown()
+
   }
 
-  handleSelectFilter = (f: Filter) => {
-    this.filters.forEach((e) => {
-      e.isSelected = e.type === f.type
-    })
+  public handleSelectFilter = (f: Filter) => {
+
+
+    if (f.type === Type.MD) {
+      this.isGrid = true
+    } else {
+      this.isGrid = false
+    }
 
     this.videos = this.allVideos.filter((e) => e.type === f.type)
   }
