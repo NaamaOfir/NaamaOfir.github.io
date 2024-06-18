@@ -18,6 +18,10 @@ app-scroll-indicator {
 
 // On Mobile
 @media screen and (max-width: 1024px) {
+    :host {
+        height: 100%;
+    }
+
     #con {
         display: flex;
         flex-direction: column;

@@ -33,6 +33,7 @@ app-video-preview.selected {
     scrollbar-width: none;
 }
 
+#gallery>app-video-preview:nth-child(1),
 #filters>app-video-filter:nth-child(1) {
     margin-left: 25px;
 }
@@ -65,14 +66,12 @@ app-video-preview.selected {
 // On Mobile
 @media screen and (max-width: 1024px) {
     :host {
-        width: 85%;
-        max-height: 60vh;
+        width: 100%;
         margin: 20px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 20px;
     }
 
     @media screen and (orientation:landscape) {
@@ -83,14 +82,14 @@ app-video-preview.selected {
 
     #gallery {
         display: flex;
-        flex-direction: column;
         gap: 20px;
         white-space: nowrap;
 
-        width: 90%;
-        height: 70svh; // TODO: maybe this a problem
-        margin-top: 10px;
-        overflow-x: hidden;
-        overflow-y: scroll;
+        width: 100%;
+        margin: 10px;
+        white-space: nowrap;
+
+        overflow-x: auto;
+        overflow-y: hidden;
     }
 }

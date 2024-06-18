@@ -60,6 +60,7 @@ h4 {
 
     app-root>* {
         scroll-snap-align: center;
+        height: inherit;
     }
 }
 
@@ -74,7 +75,6 @@ app-root {
 
 app-root>* {
     flex-shrink: 0; // this is the key
-    height: inherit;
     position: relative;
     width: 100%;
 }
