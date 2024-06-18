@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { Filter } from '../video-gallery/video-gallery.component';
 
 @Component({
@@ -10,9 +10,7 @@ export class VideoFilterComponent {
   @Input() filter!: Filter;
   @Input() onSelect!: (f: Filter) => void;
 
-  // TODO this should be on all elem not just text
-  handleSelect() {
+  @HostListener('click') handleSelect(): void {
     this.onSelect(this.filter)
   }
-
 }
