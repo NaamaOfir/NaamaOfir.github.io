@@ -1,22 +1,48 @@
-:host {
-    margin: 10px;
-    display: block;
-    background-color: var(--secondary);
-}
+// Desktop
+@media screen and (min-width: 1024px) {
+    :host {
+        height: 200px;
+        aspect-ratio: 1;
 
-img {
-    background-color: black; //TODO
-    object-fit: cover;
-}
+        // margin: 10px;
 
-h4 {
-    margin: 4px 8px;
-}
+        position: relative;
 
+        overflow: hidden;
+    }
 
-@media screen and (max-width: 768px) {
     img {
         width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+
+    h4 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--secondary);
+        margin: 0;
+        padding: 8px 10px;
+    }
+}
+
+// Mobile
+@media screen and (max-width: 1024px) {
+    :host {
+        margin: 10px;
+        display: block;
+        background-color: var(--secondary);
+    }
+
+    img {
+        background-color: black; //TODO
+        object-fit: cover;
+        width: 100%;
         aspect-ratio: 16/9;
+    }
+
+    h4 {
+        margin: 4px 8px;
     }
 }
