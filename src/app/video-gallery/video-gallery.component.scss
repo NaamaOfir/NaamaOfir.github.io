@@ -1,34 +1,33 @@
 // On Desktop
 @media screen and (min-width: 1024px) {
     :host {
-        width: 100%;
+        // height: 80vh;
+        display: flex;
+        justify-items: center;
+        align-items: center;
     }
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
-
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
     }
 
     .center {
         display: flex;
         justify-content: center;
-        gap: 100px;
         align-items: center;
+        gap: 100px;
     }
 
     #gallery {
-
-
-
-        height: 50svh;
-        margin: 40px;
+        // height: 100svh;
+        margin: 100px;
     }
 
 }
-
 
 
 // On Mobile
