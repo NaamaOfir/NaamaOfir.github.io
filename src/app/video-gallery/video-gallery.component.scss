@@ -1,13 +1,3 @@
-app-video-preview {
-    transition: outline 0.2s ease-in-out;
-    outline: 0px solid var(--active);
-}
-
-app-video-preview.selected {
-    outline: 4px solid var(--active);
-}
-
-
 // On Desktop
 @media screen and (min-width: 1024px) {
     :host {

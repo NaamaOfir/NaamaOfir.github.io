@@ -1,26 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
 :root {
     --text: hsl(12, 20%, 5%);
     --text-light: hsl(0, 0%, 20%);
-    --background: hsl(20, 18%, 97%);
+    --background: #CDCCBF;
     --primary: hsl(17, 25%, 53%);
     --secondary: hsl(16, 28%, 71%);
     --accent: hsl(17, 31%, 64%);
     --active: hsl(0, 54%, 46%);
 }
 
-
-html,
 body {
-    // height: 100svh;
-    // overflow: hidden;
-}
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
-body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
     background: var(--background);
     margin: 0;
     padding: 0;

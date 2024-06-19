@@ -7,9 +7,12 @@
 }
 
 h1 {
+    height: 40px;
+    width: 100px;
     position: absolute;
     left: 20px;
-    top: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: large;
 }
 
