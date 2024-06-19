@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { filter1, filter2, filter3 } from '../strings/videos';
 
 export enum Type {
   ALL,
@@ -129,7 +128,6 @@ export class VideoGalleryComponent {
     },
   ]
 
-
   constructor() {
     this.videos = this.allVideos.filter((e) => e.type === Type.VP)
   }
@@ -143,8 +141,9 @@ export class VideoGalleryComponent {
     this.allVideos.forEach((e) => e.isSelected = false)
     v.isSelected = true
     this.onSelectVideo(v.url)
-    this.scrollDown()
-
+    if (window.innerWidth > 1024) {
+      this.scrollDown()
+    }
   }
 
   public handleSelectFilter = (f: Filter) => {

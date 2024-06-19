@@ -20,6 +20,13 @@
     opacity: 0.1;
 }
 
+// Mobile
+@media screen and (max-width: 1024px) {
+    #background-img {
+        height: 110vh; // TODO
+    }
+}
+
 body {
     font-family: "Amaranth", sans-serif;
     font-weight: 400;
