@@ -7,6 +7,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
         MatButtonModule,
         BrowserModule,
         BodyModule,
+        HttpClientModule,
     ],
     providers: [
         provideClientHydration(),

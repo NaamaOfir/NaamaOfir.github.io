@@ -4,57 +4,57 @@
             "type": "Motion Design",
             "videos": [
                 {
+                    "path": "assets/thumbnail/capture9.png",
+                    "name": "Dialogue Opener",
+                    "url": "https://player.vimeo.com/video/955779910?h=f02c69c511",
+                    "isSelected": true
+                },
+                {
                     "path": "assets/thumbnail/capture1.png",
                     "name": "Pharmaceutical Company Animation",
-                    "url": "https: //player.vimeo.com/video/950842039?h=5f38d031f2",
-                    "isSelected": false
+                    "url": "https://player.vimeo.com/video/950842039?h=5f38d031f2",
+                    "isSelected": true
                 },
                 {
                     "path": "assets/thumbnail/capture2.png",
                     "name": "Frog Animation",
-                    "url": "https: //player.vimeo.com/video/950843409?h=122c556dfd",
+                    "url": "https://player.vimeo.com/video/950843409?h=122c556dfd",
                     "isSelected": false
                 },
                 {
                     "path": "assets/thumbnail/capture3.png",
                     "name": "Working From Home Animation",
-                    "url": "https: //player.vimeo.com/video/950843968?h=ff06ee5cac",
+                    "url": "https://player.vimeo.com/video/950843968?h=ff06ee5cac",
                     "isSelected": false
                 },
                 {
                     "path": "assets/thumbnail/capture4.png",
                     "name": "Blue",
-                    "url": "https: //player.vimeo.com/video/950846203?h=661abe13f9",
+                    "url": "https://player.vimeo.com/video/950846203?h=661abe13f9",
                     "isSelected": false
                 },
                 {
                     "path": "assets/thumbnail/capture5.png",
                     "name": "Mind-Body Connection Explainer",
-                    "url": "https: //player.vimeo.com/video/950847796?h=a27afd3b38",
+                    "url": "https://player.vimeo.com/video/950847796?h=a27afd3b38",
                     "isSelected": false
                 },
                 {
                     "path": "assets/thumbnail/capture6.png",
                     "name": "Moon Cycle Animation",
-                    "url": "https: //player.vimeo.com/video/950846845?h=e16980c954",
+                    "url": "https://player.vimeo.com/video/950846845?h=e16980c954",
                     "isSelected": false
                 },
                 {
                     "path": "assets/thumbnail/capture7.png",
                     "name": "Windmill Animation",
-                    "url": "https: //player.vimeo.com/video/950848729?h=25e3d48954",
+                    "url": "https://player.vimeo.com/video/950848729?h=25e3d48954",
                     "isSelected": false
                 },
                 {
                     "path": "assets/thumbnail/capture8.png",
                     "name": "name Animation",
-                    "url": "https: //player.vimeo.com/video/952260773?h=8fa4cdb0d4",
-                    "isSelected": false
-                },
-                {
-                    "path": "assets/thumbnail/capture9.png",
-                    "name": "Dialogue Opener",
-                    "url": "https: //player.vimeo.com/video/955779910?h=f02c69c511",
+                    "url": "https://player.vimeo.com/video/952260773?h=8fa4cdb0d4",
                     "isSelected": false
                 }
             ]
@@ -65,30 +65,30 @@
                 {
                     "path": "assets/thumbnail/capture10.png",
                     "name": "3D Character Animation Reel 2024",
-                    "url": "https: //player.vimeo.com/video/830933663?h=35955ad039",
+                    "url": "https://player.vimeo.com/video/830933663?h=35955ad039",
                     "isSelected": false
                 }
             ]
         },
         {
-            "type": "Video Production",
+            "type": "Video Projects",
             "videos": [
                 {
                     "path": "assets/thumbnail/capture11.png",
                     "name": "Hailo-Holiday Short",
-                    "url": "https: //player.vimeo.com/video/950849766?h=0fad089f95",
-                    "isSelected": true
+                    "url": "https://player.vimeo.com/video/950849766?h=0fad089f95",
+                    "isSelected": false
                 },
                 {
                     "path": "assets/thumbnail/capture12.png",
                     "name": "Hailo-Demo",
-                    "url": "https: //player.vimeo.com/video/905515939?h=f8381f3038",
+                    "url": "https://player.vimeo.com/video/905515939?h=f8381f3038",
                     "isSelected": false
                 },
                 {
                     "path": "assets/thumbnail/capture13.png",
                     "name": "Hailo-Renesas Demo",
-                    "url": "https: //player.vimeo.com/video/905509689?h=96b7eb38e3",
+                    "url": "https://player.vimeo.com/video/905509689?h=96b7eb38e3",
                     "isSelected": false
                 }
             ]

@@ -6,11 +6,10 @@ export enum Type {
   ALL = 'All',
   MD = 'Motion Design',
   CA = '3D Character Animation',
-  VP = 'Video Production',
+  VP = 'Video Projects',
 }
 
 export type Filter = {
-  name: string;
   type: Type;
   isSelected: boolean;
 }
@@ -47,13 +46,9 @@ type VideoPreview = {
 export class VideoGalleryComponent {
   @Input() onSelectVideo!: (src: string) => void
 
-  isGrid = false
-
-
+  isGrid = true
   videos: VideoPreview[] = []
-
   allVideos: VideoPreview[] = []
-
 
   constructor(
     private videoDataService: VideoDataService
@@ -88,7 +83,7 @@ export class VideoGalleryComponent {
         return Type.MD
       case '3D Character Animation':
         return Type.CA
-      case 'Video Production':
+      case 'Video Projects':
         return Type.VP
       default:
         return Type.ALL
@@ -103,6 +98,7 @@ export class VideoGalleryComponent {
   handleVideoClick = (v: VideoPreview) => {
     this.allVideos.forEach((e) => e.isSelected = false)
     v.isSelected = true
+    console.log('v.url', v.url)
     this.onSelectVideo(v.url)
     if (window.innerWidth > 1024) {
       this.scrollDown()
