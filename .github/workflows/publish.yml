@@ -19,10 +19,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Test
-        run: echo ${{ secrets.GH_TOKEN }}
-
       - name: Deploy to GitHub Pages
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npm run ghaction
+        run: npx angular-cli-ghpages --no-silent --repo=https://github.com/NaamaOfir/NaamaOfir.github.io --name=naamaofir --email=Nofir6993@gmail.com --branch=prod --cname=naamaofir.com
