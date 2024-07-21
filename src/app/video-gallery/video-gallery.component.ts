@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
+import { VideoDataService } from '../video-data/video-data.service';
 
 export enum Type {
-  ALL,
-  MD,
-  CA,
-  VP,
+  ALL = 'All',
+  MD = 'Motion Design',
+  CA = 'Character Animation',
+  VP = 'Video Production',
 }
 
 export type Filter = {
@@ -128,8 +129,18 @@ export class VideoGalleryComponent {
     },
   ]
 
-  constructor() {
+  constructor(
+    private videoDataService: VideoDataService
+  ) {
     this.videos = this.allVideos.filter((e) => e.type === Type.VP)
+  }
+
+  public tmp?: unknown
+
+  async ngOnInit() {
+    await this.videoDataService.getJSON().subscribe(data => {
+      this.tmp = data
+    });
   }
 
   scrollDown() {

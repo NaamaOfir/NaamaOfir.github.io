@@ -3,3 +3,6 @@
         [path]="e.path" [name]="e.name">
     </app-video-preview>
 </div>
+<div *ngIf="tmp">
+    <pre>{{ tmp | json }}</pre>
+</div>
