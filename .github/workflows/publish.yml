@@ -25,4 +25,4 @@ jobs:
       - name: Deploy to GitHub Pages
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: ng deploy --no-silent --repo=https://github.com/NaamaOfir/NaamaOfir.github.io --branch=prod --cname=naamaofir.com
+        run: yarn ghaction
