@@ -13,7 +13,13 @@
                     "path": "assets/thumbnail/capture1.png",
                     "name": "Pharmaceutical Company Animation",
                     "url": "https://player.vimeo.com/video/950842039?h=5f38d031f2",
-                    "isSelected": true
+                    "isSelected": false
+                },
+                {
+                    "path": "assets/thumbnail/capture14.png",
+                    "name": "Watch",
+                    "url": "https://player.vimeo.com/video/962917558",
+                    "isSelected": false
                 },
                 {
                     "path": "assets/thumbnail/capture2.png",
