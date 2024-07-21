@@ -98,7 +98,6 @@ export class VideoGalleryComponent {
   handleVideoClick = (v: VideoPreview) => {
     this.allVideos.forEach((e) => e.isSelected = false)
     v.isSelected = true
-    console.log('v.url', v.url)
     this.onSelectVideo(v.url)
     if (window.innerWidth > 1024) {
       this.scrollDown()
