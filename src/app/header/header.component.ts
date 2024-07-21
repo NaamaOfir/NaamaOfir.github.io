@@ -1,15 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { fullName, logoPath } from '../strings/intro';
 
-import { filter1, filter2, filter3 } from '../strings/videos';
-import { Type } from '../video-gallery/video-gallery.component';
-
-export type Filter = {
-  name: string;
-  type: Type;
-  isSelected: boolean;
-}
-
+import { Filter, Type } from '../video-gallery/video-gallery.component';
 
 @Component({
   selector: 'app-header',
@@ -21,21 +13,17 @@ export class HeaderComponent {
   readonly logoPath = logoPath;
   readonly title = fullName;
 
-
   filters: Filter[] = [
     {
-      type: Type.VP,
-      name: filter3,
+      type: Type.MD,
       isSelected: true,
     },
     {
-      type: Type.MD,
-      name: filter1,
+      type: Type.VP,
       isSelected: false,
     },
     {
       type: Type.CA,
-      name: filter2,
       isSelected: false,
     },
   ]
@@ -46,5 +34,4 @@ export class HeaderComponent {
     })
     this.onSelectFilter(f)
   }
-
 }

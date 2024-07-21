@@ -1,16 +1,33 @@
 import { Component, Input } from '@angular/core';
+import { VideoDataService } from '../video-data/video-data.service';
+import { firstValueFrom } from 'rxjs';
 
 export enum Type {
-  ALL,
-  MD,
-  CA,
-  VP,
+  ALL = 'All',
+  MD = 'Motion Design',
+  CA = '3D Character Animation',
+  VP = 'Video Projects',
 }
 
 export type Filter = {
-  name: string;
   type: Type;
   isSelected: boolean;
+}
+
+type VidDetails = {
+  name: string;
+  path: string;
+  url: string;
+  isSelected: boolean;
+}
+
+type Category = {
+  type: string;
+  videos: VidDetails[];
+}
+
+export interface JsonStruct {
+  all_videos: Category[];
 }
 
 type VideoPreview = {
@@ -29,107 +46,48 @@ type VideoPreview = {
 export class VideoGalleryComponent {
   @Input() onSelectVideo!: (src: string) => void
 
-  isGrid = false
-
-
+  isGrid = true
   videos: VideoPreview[] = []
+  allVideos: VideoPreview[] = []
 
-  readonly allVideos: VideoPreview[] = [
-    {
-      type: Type.MD,
-      path: 'assets/thumbnail/capture1.png',
-      name: 'Pharmaceutical Company Animation',
-      url: 'https://player.vimeo.com/video/950842039?h=5f38d031f2',
-      isSelected: false,
-    },
-    {
-      type: Type.MD,
-      path: 'assets/thumbnail/capture2.png',
-      name: 'Frog Animation',
-      url: 'https://player.vimeo.com/video/950843409?h=122c556dfd',
-      isSelected: false,
-    },
-    {
-      type: Type.MD,
-      path: 'assets/thumbnail/capture3.png',
-      name: 'Working From Home Animation',
-      url: 'https://player.vimeo.com/video/950843968?h=ff06ee5cac',
-      isSelected: false,
-    },
-    {
-      type: Type.MD,
-      path: 'assets/thumbnail/capture4.png',
-      name: 'Blue',
-      url: 'https://player.vimeo.com/video/950846203?h=661abe13f9',
-      isSelected: false,
-    },
-    {
-      type: Type.MD,
-      path: 'assets/thumbnail/capture5.png',
-      name: 'Mind-Body Connection Explainer',
-      url: 'https://player.vimeo.com/video/950847796?h=a27afd3b38',
-      isSelected: false,
-    },
-    {
-      type: Type.MD,
-      path: 'assets/thumbnail/capture6.png',
-      name: 'Moon Cycle Animation',
-      url: 'https://player.vimeo.com/video/950846845?h=e16980c954',
-      isSelected: false,
-    },
-    {
-      type: Type.MD,
-      path: 'assets/thumbnail/capture7.png',
-      name: 'Windmill Animation',
-      url: 'https://player.vimeo.com/video/950848729?h=25e3d48954',
-      isSelected: false,
-    },
-    {
-      type: Type.MD,
-      path: 'assets/thumbnail/capture8.png',
-      name: 'Name Animation',
-      url: 'https://player.vimeo.com/video/952260773?h=8fa4cdb0d4',
-      isSelected: false,
-    },
-    {
-      type: Type.MD,
-      path: 'assets/thumbnail/capture9.png',
-      name: 'Dialogue Opener',
-      url: 'https://player.vimeo.com/video/955779910?h=f02c69c511',
-      isSelected: false,
-    },
-    {
-      type: Type.CA,
-      path: 'assets/thumbnail/capture10.png',
-      name: '3D Character Animation Reel 2024',
-      url: 'https://player.vimeo.com/video/830933663?h=35955ad039',
-      isSelected: false,
-    },
-    {
-      type: Type.VP,
-      path: 'assets/thumbnail/capture11.png',
-      name: 'Hailo-Holiday Short',
-      url: 'https://player.vimeo.com/video/950849766?h=0fad089f95',
-      isSelected: true,
-    },
-    {
-      type: Type.VP,
-      path: 'assets/thumbnail/capture12.png',
-      name: 'Hailo-Demo',
-      url: 'https://player.vimeo.com/video/905515939?h=f8381f3038',
-      isSelected: false,
-    },
-    {
-      type: Type.VP,
-      path: 'assets/thumbnail/capture13.png',
-      name: 'Hailo-Renesas Demo',
-      url: 'https://player.vimeo.com/video/905509689?h=96b7eb38e3',
-      isSelected: false,
-    },
-  ]
+  constructor(
+    private videoDataService: VideoDataService
+  ) {
+  }
 
-  constructor() {
-    this.videos = this.allVideos.filter((e) => e.type === Type.VP)
+  async ngOnInit() {
+    await this.loadVideos()
+
+    this.videos = this.allVideos.filter((e) => e.type === Type.MD)
+  }
+
+  private async loadVideos() {
+    const src = this.videoDataService.getJSON()
+    const data = await firstValueFrom(src);
+    data?.all_videos.forEach((e) => {
+      e.videos.forEach((v) => {
+        this.allVideos.push({
+          type: this.getType(e.type),
+          name: v.name,
+          path: v.path,
+          url: v.url,
+          isSelected: v.isSelected,
+        });
+      });
+    });
+  }
+
+  private getType(text: string): Type {
+    switch (text) {
+      case 'Motion Design':
+        return Type.MD
+      case '3D Character Animation':
+        return Type.CA
+      case 'Video Projects':
+        return Type.VP
+      default:
+        return Type.ALL
+    }
   }
 
   scrollDown() {
@@ -147,8 +105,6 @@ export class VideoGalleryComponent {
   }
 
   public handleSelectFilter = (f: Filter) => {
-
-
     if (f.type === Type.MD) {
       this.isGrid = true
     } else {
