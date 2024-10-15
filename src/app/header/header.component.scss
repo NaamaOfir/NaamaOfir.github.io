@@ -9,8 +9,10 @@
     }
 
     h1 {
-        height: 40px;
-        width: 100px;
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+        width: fit-content;
         position: absolute;
         left: 20px;
         top: 50%;

@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "stage": " ng deploy --no-silent --repo=https://github.com/arikhativa/arikhativa.github.io --branch=main",
-    "prod": " ng deploy --no-silent --repo=https://github.com/NaamaOfir/NaamaOfir.github.io --branch=prod --cname=naamaofir.com",
-    "ghaction": " ng deploy --no-silent --repo=https://github.com/NaamaOfir/NaamaOfir.github.io --name=NaamaOfir --email=Nofir6993@gmail.com --branch=prod --cname=naamaofir.com",
+    "prod": "ng build && ng deploy --no-silent --repo=https://github.com/NaamaOfir/NaamaOfir.github.io --branch=prod --cname=naamaofir.com",
+    "ghaction": "ng build && ng deploy --no-silent --repo=https://github.com/NaamaOfir/NaamaOfir.github.io --name=NaamaOfir --email=Nofir6993@gmail.com --branch=prod --cname=naamaofir.com",
     "serve:ssr:NaamaOfir": "node dist/naama-page/server/server.mjs"
   },
   "private": true,
