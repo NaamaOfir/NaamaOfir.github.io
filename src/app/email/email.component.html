@@ -1,3 +1,7 @@
-<!-- <fa-icon (click)="copyEmailToClipboard($event)" (touchstart)="copyEmailToClipboard($event)" [styles]="style"
-    [icon]="copyIcon"></fa-icon> -->
-<h3 (click)="copyEmailToClipboard($event)">{{email}}</h3>
+<div id="email">
+    <h2>
+        {{'Contact'}}
+    </h2>
+    <fa-icon id="icon" [icon]="faEnvelope"></fa-icon>
+    <h2 id="email-text" (click)="copyEmailToClipboard($event)">{{email}}</h2>
+</div>

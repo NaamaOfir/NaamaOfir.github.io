@@ -1,8 +1,41 @@
 :host {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: start;
-    gap: 20px;
+    width: 100%;
+}
+
+
+#icon {
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#email {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+}
+
+#email-text {
     cursor: pointer;
-    margin: 10px 0;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 1024px) {
+    #icon {
+
+        font-size: large;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
 }

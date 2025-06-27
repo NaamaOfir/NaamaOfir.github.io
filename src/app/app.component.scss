@@ -13,26 +13,3 @@
     align-items: center;
     padding-bottom: 1rem;
 }
-
-#email-con {
-    display: flex;
-    justify-content: center;
-}
-
-#email {
-    width: fit-content;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px
-}
-
-
-h2 {
-    font-size: xx-large;
-}
-
-@media screen and (max-width: 1024px) {
-    h2 {
-        font-size: x-large;
-    }
-}

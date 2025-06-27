@@ -42,6 +42,7 @@ import { HeaderComponent } from '../header/header.component';
     IntroComponent,
     VideosComponent,
     AboutComponent,
+    EmailComponent,
   ]
 })
 export class BodyModule { }
