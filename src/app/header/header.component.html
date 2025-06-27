@@ -1,7 +1,17 @@
-<div id="title-con">
-    <h1>{{title}}</h1>
-</div>
-<div id="filters">
-    <app-video-filter *ngFor="let e of filters" [ngClass]="{'selected': e.isSelected}" [filter]="e"
-        [onSelect]="handleFilterSelect" [isSelected]="e.isSelected"></app-video-filter>
+<div id="main-con">
+    <div id="top-con">
+        <h1>{{title}}</h1>
+        <div id="filters">
+            <app-video-filter *ngFor="let e of filters" [ngClass]="{'selected': e.isSelected}" [filter]="e"
+                [onSelect]="handleFilterSelect" [isSelected]="e.isSelected"></app-video-filter>
+        </div>
+    </div>
+    <div id="div-con">
+        <div id="divider"></div>
+    </div>
+    <div id="about-con">
+        <p>{{aboutText1}} </p>
+        <p>{{aboutText11}} </p>
+        <p> {{aboutText2}} </p>
+    </div>
 </div>

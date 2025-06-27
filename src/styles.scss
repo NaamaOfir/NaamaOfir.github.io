@@ -64,17 +64,17 @@ h4 {
 }
 
 // On Desktop
-@media screen and (min-width: 1024px) {
+// @media screen and (min-width: 1024px) {
 
-    app-root {
-        scroll-snap-type: y mandatory;
-    }
+// app-root {
+//     scroll-snap-type: y mandatory;
+// }
 
-    app-root>* {
-        scroll-snap-align: center;
-        height: inherit;
-    }
-}
+// app-root>* {
+//     scroll-snap-align: center;
+//     height: inherit;
+// }
+// }
 
 // app-root {
 //     overflow-y: auto;

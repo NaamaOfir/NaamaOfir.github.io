@@ -1,76 +1,100 @@
 // Desktop
-@media screen and (min-width: 1024px) {
-    :host {
-        position: relative;
-        display: block;
-        height: 100px;
-        width: 100%;
-        background-color: #F1F1F1;
-    }
+// @media screen and (min-width: 1024px) {
+:host {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    background-color: #F1F1F1;
+}
 
-    h1 {
-        margin: 0;
-        padding: 0;
-        height: fit-content;
-        width: fit-content;
-        position: absolute;
-        left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: large;
-    }
+#main-con {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-    #filters {
-        position: absolute;
-        right: 20px;
+#top-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        top: 50%;
-        transform: translateY(-50%);
+    width: 100%;
+    margin-top: 20px;
+    height: fit-content;
+}
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+#about-con {
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
 
-    }
+#about-con>p {
+    font-size: large;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: larger;
+    padding-left: 40px;
+}
+
+#filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#div-con {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+
+}
+
+#divider {
+    width: 50%;
+    height: 1px;
+    background: #0000004d;
+    margin: 20px 20px;
+    border-radius: 100%;
 }
 
 // Mobile
 @media screen and (max-width: 1024px) {
-    :host {
-        position: relative;
-        display: flex;
+    #top-con {
         flex-direction: column;
-        justify-content: center;
-        align-self: center;
-        // height: 100px;
-        width: 100%;
-        background-color: #F1F1F1;
+        height: fit-content;
     }
 
-    #title-con {
-        display: flex;
-        justify-content: center;
-        align-self: center;
+    #about-con {
+        margin-top: 0px;
+        padding: 0 20px;
+        gap: 0px;
+        width: fit-content;
+    }
+
+    #about-con>p {
+        text-align: center;
     }
 
     h1 {
-        margin: 0;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        padding: 0;
-
+        padding-left: 0;
     }
 
     #filters {
-        margin-bottom: 20px;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        gap: 10px;
+        flex-direction: row;
     }
-
 
     @media screen and (orientation:landscape) {
         :host {
