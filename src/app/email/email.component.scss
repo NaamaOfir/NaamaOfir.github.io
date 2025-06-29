@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 
@@ -32,10 +31,10 @@ h2 {
 @media screen and (max-width: 1024px) {
     #icon {
 
-        font-size: large;
+        font-size: medium;
     }
 
     h2 {
-        font-size: x-large;
+        font-size: large;
     }
 }

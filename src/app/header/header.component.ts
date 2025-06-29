@@ -12,9 +12,6 @@ export class HeaderComponent {
   @Input() onSelectFilter!: (f: Filter) => void
   readonly logoPath = logoPath;
   readonly title = fullName;
-  readonly aboutText1 = "Hi! I am Naama, a 3D Character Animator, Motion Designer and Video Editor,"
-  readonly aboutText11 = "a Graduate of Bezalel Academy of Arts and Design in 2021."
-  readonly aboutText2 = "I love making beautiful Visuals and making stories come alive. "
 
   filters: Filter[] = [
     {
@@ -22,11 +19,11 @@ export class HeaderComponent {
       isSelected: true,
     },
     {
-      type: Type.VP,
+      type: Type.CA,
       isSelected: false,
     },
     {
-      type: Type.CA,
+      type: Type.VP,
       isSelected: false,
     },
   ]

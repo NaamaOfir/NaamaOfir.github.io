@@ -24,6 +24,10 @@
     height: fit-content;
 }
 
+.text-mobile {
+    display: none;
+}
+
 #about-con {
     width: 100%;
     gap: 15px;
@@ -35,13 +39,15 @@
     margin-bottom: 40px;
 }
 
-#about-con>p {
+p {
+    text-align: center;
     font-size: large;
     margin: 0;
     padding: 0;
 }
 
 h1 {
+    font-weight: 100;
     font-size: larger;
     padding-left: 40px;
 }
@@ -78,14 +84,14 @@ h1 {
     }
 
     #about-con {
-        margin-top: 0px;
-        padding: 0 20px;
-        gap: 0px;
-        width: fit-content;
+        display: none;
     }
 
-    #about-con>p {
-        text-align: center;
+    .text-mobile {
+        display: block;
+        font-size: medium;
+        line-height: 24px;
+        padding-bottom: 20px;
     }
 
     h1 {
