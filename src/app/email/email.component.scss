@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+
 }
 
 
@@ -12,12 +15,12 @@
     justify-content: center;
 }
 
-#email {
-    width: fit-content;
+
+.pair-con {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    justify-content: center;
     align-items: center;
-    gap: 20px
 }
 
 #email-text {
@@ -25,16 +28,34 @@
 }
 
 h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.link-text,
+h2 {
+    font-weight: 500;
     font-size: xx-large;
 }
 
 @media screen and (max-width: 1024px) {
-    #icon {
+    :host {
+        align-self: center;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+        padding: 0 25%;
+        padding-top: 20px;
 
+    }
+
+    #icon {
         font-size: medium;
     }
 
+    .link-text,
     h2 {
+
         font-size: large;
     }
 }

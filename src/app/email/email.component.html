@@ -1,7 +1,11 @@
-<div id="email">
-    <h2>
-        {{'Contact'}}
-    </h2>
+<h2>
+    {{'Contact'}}
+</h2>
+<div class="pair-con ">
     <fa-icon id="icon" [icon]="faEnvelope"></fa-icon>
     <h2 id="email-text" (click)="copyEmailToClipboard($event)">{{email}}</h2>
+</div>
+<div class="pair-con ">
+    <fa-icon id="icon" [icon]="faLinkedin"></fa-icon>
+    <a class="link-text" href="https://linkedin.com/in/naama-ofir-546750180">linkedin</a>
 </div>

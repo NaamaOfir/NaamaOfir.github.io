@@ -47,7 +47,6 @@ p {
 }
 
 h1 {
-    font-weight: 100;
     font-size: larger;
     padding-left: 40px;
 }
@@ -57,23 +56,6 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-}
-
-#div-con {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-
-}
-
-#divider {
-    width: 50%;
-    height: 1px;
-    background: #0000004d;
-    margin: 20px 20px;
-    border-radius: 100%;
 }
 
 // Mobile
